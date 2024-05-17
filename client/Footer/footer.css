@@ -1,0 +1,8 @@
+/* footer  */
+footer {
+  padding: 20px;
+}
+
+footer .list-unstyled li:hover a {
+  color: bisque !important;
+}

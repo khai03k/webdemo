@@ -1,0 +1,56 @@
+
+/* CONTENT  */
+#content h1 {
+  color: black;
+}
+
+#content h1.title {
+  margin: 25vh 0 2vh;
+}
+
+#content .carousel {
+  width: 100%;
+}
+
+#content .carousel img {
+  width: 100%;
+  /* 100% chiều dọc màn hình trừ 10px margin header top - 100px header top - 60px header bottom */
+  height: calc(100vh - 10px - 100px - 60px);
+  object-fit: cover;
+}
+
+#content ul.list-product li {
+  margin: 25vh 0 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width: 1200px) {
+
+  /* content carousel  */
+  #content .carousel img {
+    height: calc(100vh - 50px);
+  }
+
+  #content ul.list-product a li {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #content ul.list-product a li img {
+    width: 100vw;
+  }
+
+  #content ul.list-product a li h1,
+  #content ul.list-product h1.title {
+    font-size: 1.8rem !important;
+    text-align: center !important;
+    padding: 10px;
+  }
+}
+
